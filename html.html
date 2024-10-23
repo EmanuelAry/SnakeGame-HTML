@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cobra</title>
+  <script src="js.js"></script>
+  <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
+</head>
+<body onkeydown="setDirection(event.keyCode)">
+  <div class="game">
+    <div id="grid">
+    </div>
+    <div class="labels">
+      <label for="cobra">Cobra:</label>
+      <input type="color" value="#FBCA49" id="cobra" onchange="desenhar()">
+      <label for="comida">Comida:</label>
+      <input type="color" value="#F11362" id="comida" onchange="desenhar()">
+      <label for="campo">Campo:</label>
+      <input type="color" value="#00CE8D" id="campo" onchange="desenhar()">
+    </div>
+    <div>
+      <table id="tbpontos">
+        <tr>
+          <th>N°</th>
+          <th>Pontos</th>
+        </tr>
+      </table>
+    </div>  
+  </div>
+  <br>
+  <button id="iniciar" onclick="iniciar()">Iniciar</button>
+  <button id="pausar" onclick="pausar()" hidedden="true">Pausar</button>
+  <button id="continuar" onclick="continuar()" hidedden="true">Continuar</button>
+</body>
+</html>
